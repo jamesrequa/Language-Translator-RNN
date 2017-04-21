@@ -1,4 +1,4 @@
-# Recurrent Neural Network for Language Translation
+## Recurrent Neural Network for Language Translation
 
 I built a language translator algorithm using a Sequence to Sequence model Recurrent Neural Network.
 
