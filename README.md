@@ -1,4 +1,4 @@
-## Recurrent Neural Network for Language Translation
+# Recurrent Neural Network for Language Translation
 
 I built a language translator algorithm using a Sequence to Sequence model Recurrent Neural Network.
 
@@ -6,7 +6,7 @@ The RNN is built on TensorFlow, written in Python 3 and is presented via Jupyter
 
 The following are some of the steps I took to build this RNN:
 
-Preprocessing
+##Preprocessing
 
 - Convert source and target text to proper word ids
 
