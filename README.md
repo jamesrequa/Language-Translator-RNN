@@ -1,16 +1,16 @@
 # Recurrent Neural Network for Language Translation
 
-I built a language translator algorithm using a Sequence to Sequence model Recurrent Neural Network.
-
-The RNN is built on TensorFlow, written in Python 3 and is presented via Jupyter Notebook. Trained via cloud on FloydHub's gpus. 
+I built a language translator algorithm using a Sequence to Sequence model Recurrent Neural Network. The RNN is built on TensorFlow, written in Python 3 and is presented via Jupyter Notebook. Trained via cloud on FloydHub's gpus. 
 
 The following are some of the steps I took to build this RNN:
 
-##Preprocessing
+## Preprocessing
 
-- Convert source and target text to proper word ids
+Convert source and target text to proper word ids
 
-Build the Neural Network: Here I build the components necessary for a Sequence-to-Sequence model with the functions below:
+## Build the Neural Network: 
+
+Here I build the components necessary for a Sequence-to-Sequence model with the functions below:
 
 model_inputs:  Create TF Placeholders for input, targets, and learning rate.
 process_decoding_input: remove last word id from each target_data batch, concat GO ID to beginning. Use TF tf.strided_slice and tf.concat. 
@@ -21,12 +21,12 @@ decoding_layer: implement the decoding_layer() function to create a Decoder RNN 
 seq2seq_model: this implements all of the above functions to build the neural network model
 
 
-Training the network
+## Training the network
 
 Hyperparameters: epochs, batch size, rnn size, num_layers, encoding_embedding_size, decoding_embedding_size, learning rate, keep_prob
 Training: Trained the neural network and achieved a training and validation accuracy rate of 94% after just 10 epochs.
 
-Translation
+## Translation
 
 To feed a sentence into the model for translation, we first need to preprocess it. I implement the function sentence_to_seq() to preprocess new sentences.
 
